@@ -1,13 +1,39 @@
 .bg{
 	background-color: rgb(34, 34, 34);
 }
+.wrapper{
+	display: flex;
+}
+.left_wrapper{
+	position: absolute;
+	width: 30%;
+	z-index: 33;
+}
+.stats_wrapper{
+	position: absolute;
+	top: 30%;
+	right: 5%;
+}
+.stats{
+	display: flex;
+	align-items: center;
+	margin-top: 20% ;
+}
+.stats p{
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 00.06em;
+	font-family: 'rubik-light';
+	text-transform: uppercase;
+	margin-left: 5%;
+}
 header h1{
 	font-family: 'rubik-regular';
 	font-size: 70px;
 	color: #fff;
-	opacity: 85%;
+	opacity: 0.9;
 	letter-spacing: 0.06em;
-	margin: 5% 0 0 5%;
+	margin: 10% 0 0 10%;
 }
 .left {
 	display: flex;
@@ -20,7 +46,7 @@ header h1{
 .location{
 	display: flex;
 	align-items: center;
-	margin: 5% 0 0 5%;
+	margin: 5% 0 5% 10%;
 }
 .location p{
 	color: #fff;
@@ -30,10 +56,10 @@ header h1{
 	margin-left: 1.5%;
 }
 .search{
-	margin:5%  0 0 5%;
+	margin:20%  0 15% 10%;
 	display: flex;
 	flex-direction: column;
-	width: 17%;
+	width: 50%;
 }
 .search input{
 	border: none;
@@ -73,22 +99,22 @@ header h1{
 	letter-spacing: 0.06em;
 }
 .measurements{
-	margin-left: 5%;
+	margin-left: 10%;
 }
 .measurements p{
 	font-size: 18px;
 	font-family: 'rubik-light';
 	text-transform: capitalize;
-	letter-spacing: 00.06em;
+	letter-spacing: 0.06em;
 	color: #fff;
-	margin-top: 1%;
+	margin-top: 3%;
 }
 .quality{
 	display: flex;
 	align-items: center;
 }
 .quality img{
-	margin: 1% 1.5% 0 0;
+	margin: 3% 1.5% 0 0;
 }
 
 /* map */
@@ -99,6 +125,7 @@ header h1{
 	vertical-align: middle;
 	background-color: transparent;
 	height: 70vh;
+	margin-top: 10%;
 }
 element.style {
 	fill: rgb(34, 34, 34);
