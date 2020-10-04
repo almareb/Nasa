@@ -1,3 +1,35 @@
+*{
+	outline: none;
+}
+header{
+	max-width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+header ul{
+	display: flex;
+	width: 25%;
+	justify-content: space-between;
+	margin-right: 15%;
+}
+header li a{
+	color: #fff;
+	opacity: 0.9;
+	font-family: 'rubik-light';
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 00.06em;
+	transition: all 0.2s ease 0s;
+}
+header li a:hover{
+	color: rgba(255, 255, 255, 0.637);
+}
+.here{
+	text-decoration: line-through;
+	color: #FFB335;
+}
 .bg{
 	background-color: rgb(34, 34, 34);
 }
@@ -33,7 +65,7 @@ header h1{
 	color: #fff;
 	opacity: 0.9;
 	letter-spacing: 0.06em;
-	margin: 10% 0 0 10%;
+	margin-top: 10%;
 }
 .left {
 	display: flex;
@@ -46,7 +78,7 @@ header h1{
 .location{
 	display: flex;
 	align-items: center;
-	margin: 5% 0 5% 10%;
+	margin: 5% 0 5% 15%;
 }
 .location p{
 	color: #fff;
@@ -56,7 +88,7 @@ header h1{
 	margin-left: 1.5%;
 }
 .search{
-	margin:20%  0 15% 10%;
+	margin:20%  0 15% 15%;
 	display: flex;
 	flex-direction: column;
 	width: 50%;
@@ -99,7 +131,7 @@ header h1{
 	letter-spacing: 0.06em;
 }
 .measurements{
-	margin-left: 10%;
+	margin-left: 15%;
 }
 .measurements p{
 	font-size: 18px;
@@ -158,7 +190,7 @@ element.style {
 }
 .svg-container svg.active path:hover{
 	fill: rgb(242, 205, 94) !important;
-	transform: scale(2) ;
+	transform: scale(1.5);
 }
 svg path:nth-child(1) {
 	animation-delay: 0.02s;
@@ -799,4 +831,123 @@ svg path:nth-child(210) {
 		opacity: 1;
 		transform: scale(1);
    }
+}
+
+
+/* tree page
+========================================================================================================================================================== */
+.tree_wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10%;
+}
+.tree_wrapper img{
+	height: 350px;
+	margin-right: 15%;
+}
+.tree_text{
+	display: flex;
+	flex-direction: column;
+	width:40%;
+	margin-left: 5%;
+}
+.tree_text h2{
+	text-transform: capitalize;
+	font-size: 52px;
+	font-family: 'rubik-regular';
+	letter-spacing: 00.06em;
+	margin-bottom: 5%;
+	color: #fff;
+}
+.tree_text p{
+	font-size: 20px;
+	font-family: 'rubik-light';
+	letter-spacing: 00.06em;
+	color: #fff;
+}
+.tree_text p:last-of-type{
+	margin-top:3%	
+}
+.line{
+	margin-top: 2%;
+	border-bottom: 1px solid #FFB335;
+}
+.regions_wrapper{
+	display: flex;
+	width: 100%;
+	margin-top: 7%;
+	align-items: center;
+}
+
+.regions_wrapper img{
+	width: 60%;
+}
+.reg_wrapper{
+	display: flex;
+	flex-direction: column;
+}
+.reg_wrapper select{
+	width: 50%;
+	margin-bottom: 10%;
+}
+.reg_wrapper label{
+	color: #fff;
+	font-family: 'rubik-light';
+	font-size: 18px;
+	text-transform: capitalize;
+	margin-bottom: 3%;
+}
+.regions_wrapper button{
+	background-color: transparent;
+	border: 2px solid #FFB335;
+	font-family: 'rubik-light';
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #FFB335;
+	outline: none;
+	padding: 2% 8%;
+	cursor: pointer;
+	letter-spacing: 0.06em;
+	transition: all 0.2s ease 0s;
+}
+.regions_wrapper button:hover{
+	background-color: #FFB335;
+	color: #fff;
+}
+.device{
+	border-radius: 50%;
+}
+.tubes{
+	margin-top: 7%;
+}
+.tubes p{
+	text-align: center;
+	font-size: 24px;
+	font-family: 'rubik-regular';
+	text-transform: capitalize;
+	color: #fff;
+	margin-bottom: 3%;
+}
+.tubes button{
+	background-color: transparent;
+	border: 2px solid #FFB335;
+	font-family: 'rubik-light';
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #FFB335;
+	outline: none;
+	padding: 0.5% 2%;
+	cursor: pointer;
+	letter-spacing: 0.06em;
+	transition: all 0.2s ease 0s;
+}
+
+.tubes button:hover{
+	background-color: #FFB335;
+	color: #fff;
+}
+.tubes_button{
+	text-align: center;
+	margin-bottom: 5%;
 }
